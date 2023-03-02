@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+</head>
+
+<body>
+    <h1 id="inicio" style=color:red>BLOG REFERENTE A HTML</h1>
+    <hr />
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="#Surgimento">Surgimento da internet</a></li>
+        <li><a href="#tag">Tipos de tag</a></li>
+        <li><a href="#Estrutura">Estrutura do HTML</a></li>
+        <li><a href="#semânticas">Tags semânticas</a></li>
+        <li><a href="#link">Link para aprender tudo sobre HTML</a></li>
+    </ul>
+    <h2 id="Surgimento">Surgimento da internet</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p style="text-align:justify;">O HTML existe desde 1991 e atualmente está na versão 5, que veio recheada de recursos
+        e funcionalidades que trazem melhorias para o desenvolvimento web, sua responsabilidade principal é demarcar a
+        estrutura de uma página da web. Essa estrutura do HTML é formada por um conjunto de elementos, ou seja, os
+        hipertextos, que se conectam entre si formando a página. Os elementos HTML ou também chamados de tags HTML, são
+        utilizados para informar ao navegador que tipo de estrutura é essa que está sendo construída, podendo ser
+        títulos, parágrafos, imagens, links, entre outros.Dessa forma, para que um documento seja interpretado pelo
+        navegador, é necessário que o arquivo tenha a extensão .html e a partir disso, poderá ser exibido por qualquer
+        navegador web. <br>
+        As tags são formadas por uma estrutura própria, iniciam com o sinal “menor que”, em seguida vem o nome daquele
+        elemento e por fim, o sinal “maior que”. Podem ser dispostas em tags que precisam de fechamento e tags que
+        fecham sozinhas (self-closing). O fechamento de uma tag será definido com uma barra (/), sendo que no caso das
+        tags de auto fechamento, não há necessidade da presença desse caractere.</p>
+    <h2 id="tag">Tipos de tag</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p style="text-align:justify;">As tags podem ser categorizadas inicialmente em dois tipos, em “nível de bloco”
+        (block-level) e “em linha” (inline). Um elemento em nível de bloco ocupa toda a largura de seu elemento pai, que
+        também chamamos de elemento container, criando assim um “bloco”. Já os elementos inline, geralmente usamos para
+        demarcação de conteúdos de texto.</p>
+    <h2 id="Estrutura">Estrutura básica</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p><b>A estrutura básica de uma página HTML</b>pode ser vista na <b>Listagem 1</b>, na qual podemos ver as
+        principais tags que
+        são necessárias para que o documento seja corretamente interpretado pelos browsers.</p>
+    <img src="img/imagem 1.jpg" alt="Listagem 1" height="300" width="700" display: flex;><br>
+
+    <p style="text-align:justify;"><b>Linha 1:</b> a instrução DOCTYPE deve ser sempre a primeira a aparecer em uma
+        página HTML
+        para indicar ao browser qual versão da linguagem usada. Nesse caso, estamos trabalhando com a HTML5, versão na
+        qual a declaração do DOCTYPE é bastante simples, como podemos ver na listagem;</p>
+
+    <p style="text-align:justify;"><b>Linhas 2 e 10:</b> abertura e fechamento da tag html, que delimita o documento.
+        Sendo assim, todas as demais tags da
+        página devem estar nesse espaço;</style=>
+
+    <p style="text-align:justify;"><b>Linhas 3 e 6:</b> abertura e fechamento da tag head, que define o cabeçalho do
+        documento. O conteúdo nesse espaço não
+        é visível no browser, mas contém instruções sobre seu conteúdo e comportamento. Dentro dessa tag, por exemplo,
+        podem ser inseridas folhas de estilo e scripts;</p>
+
+    <p style="text-align:justify;"><b>Linha 4:</b> a tag meta, nesse caso, especifica qual conjunto de caracteres
+        (character set ou charset) será usado
+        para renderizar o texto da página. O UTF-8 contém todos os caracteres dos padrões Unicode e ASCII, sendo,
+        portanto, o mais utilizado em páginas web. A mesma tag meta, porém com outros atributos, pode ser utilizada para
+        outros fins, como na SEO (Search Engine Optimization);
+
+    <p style="text-align:justify;"><b>Linha 5:</b> a tag title define o título da página, aquele que aparece na
+        janela/aba do navegador;</p>
+
+    <p style="text-align:justify;"><b>Linhas 7 e 9:</b> abertura e fechamento da tag body, marcando o espaço no qual
+        deve estar contido o conteúdo visual
+        da página. As demais tags que representam texto, botões etc. devem ser adicionadas nesse intervalo;</p>
+
+    <p style="text-align:justify;"><b>Linha 8:</b> nessa linha podemos observar a sintaxe para adição de comentários em
+        HTML. Esse trecho não é renderizado
+        pelo browser.</p>
+
+    <p style="text-align:justify;">Para desenvolver páginas com HTML basicamente precisamos de um editor de texto, como
+        o Bloco de Notas do Windows,
+        Nano e Emacs no Linux, entre vários outros. Há, ainda, editores com opções avançadas, como recursos de syntax
+        hilghligt e autocomplete, como Sublime Text, Atom, Brackets e Visual Studio Code, que podem ser usados para
+        <b>editar documentos HTML.</b></p>
+
+        <p style="text-align:justify;">Independentemente do editor utilizado, podemos simplesmente copiar o código da <b>Listagem 1</b>para um deles e salvar
+        o arquivo com extensão <b>.html</b>. Em seguida, podemos abrir esse arquivo em um browser.</p>
+    <h2 id="semânticas">Tags semânticas</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p style="text-align:justify;">Tags semânticas são tags que possuem um significado, que dão sentido a informação de texto ao navegador e buscadores, como por exemplo, utilizar a tag
+    <b>header</b> para cabeçalhos ou <b>article</b> para dar um significado de artigo para aquele bloco de texto, até mesmo para indicar que aquele texto é um parágrafo, é uma boa prática tentar sempre utilizar essas tags semânticas para ajudar no entendimento do código, além de ajudar muito no SEO do site (Otimização para motores de busca, é o que ajuda o seu site a se rankear melhor nos motores de buscas como o Google).</p>
+            <p>Segue abaixo a lista de tags semânticas citadas durante o artigo:</p>
+    
+<img src="img/imagem 2.jpg" alt="Semanticas" height="300" width="700">
+
+<h2 id="link">Aprenda tudo sobre HTMl nos Links abaixo 👇</h2> <small><a href="#inicio">(voltar)</a></small>
+
+<p>➡️Click aqui e veja o curso completo de html pelo: <a target="_blank" href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Cursos em Videos</a></p>
+<p>➡️Click aqui e veja o curso completo de html pelo: <a target="_blank" href="https://www.youtube.com/watch?v=nPEpaft1y1k">Canal programação web</a></p>
+
+</body>
+
+</html>
